@@ -1,0 +1,62 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet"
+	href="/bootstrap/css/bootstrap.css">
+<link type="text/css" rel="stylesheet"
+	href="/bootstrap/css/bootstrap-responsive.css">
+<style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+      .row {
+        margin-left: 0px;
+        margin-top: 10px;
+       
+      }
+		.cust{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+		border-style:solid;
+		border-width:2px;
+		border-radius:5px;
+		}
+    </style>
+	<title>2016/11/14 - Emil Daniel Ordonez Avila</title>
+</head>
+<body>  
+    <header class="jumbotron">
+        <div class="container cust">
+            <div class="row row-header">
+                <div class="col-xs-12 col-sm-8">
+                    <h1>Videos de Laureate International
+					Universities</h1>                    
+                    <p>2016/11/14 - Emil Daniel Ordonez Avila</p>
+                </div>
+            </div>
+        </div>
+    </header>
+	<div class="container cust">
+		<form class="form-inline cust" onsubmit="busqueda();return false;">
+		<div class="form-group">
+			<p>Solo se mostraran 5 videos del total de resultados por cuestiones de rendimiento</p>
+			<label for="filtro">Filtros:</label>
+			<input id="filtro" type="text" placeholder="Coloca un filtro deseado" class="form-control"/>
+		</div>
+		<input id="botonBuscar" type="submit" class="btn btn-primary" value="Buscar">
+		</form>
+		<h1>Resultados</h1>
+     	<div id="resultados" class="container"></div>
+
+		<!--<div class="row embed-responsive embed-responsive-16by9">
+			 	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/huQ54yz8OgU"></iframe>
+			</div>-->
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="scripts/search.js"></script>
+
+</body>
+</html>

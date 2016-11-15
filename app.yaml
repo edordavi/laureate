@@ -1,0 +1,14 @@
+runtime: python27
+api_version: 1
+threadsafe: false
+
+handlers:
+
+- url: /bootstrap
+  static_dir: webpage/bootstrap
+
+- url: /scripts
+  static_dir: webpage/scripts
+  
+- url: /.*
+  script: init.py
